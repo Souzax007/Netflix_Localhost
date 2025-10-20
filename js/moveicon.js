@@ -1,12 +1,14 @@
-const link = document.querySelector('.nav-link');
-  const icon = document.querySelector('#iconHome');
+ const links = document.querySelectorAll('.nav-link');
 
-  // dispara animação quando o mouse entra no link
-  link.addEventListener('mouseenter', () => {
-    icon.dispatchEvent(new Event('mouseenter'));
-  });
+  links.forEach(link => {
+    const icon = link.querySelector('lord-icon'); 
 
-  // para animação quando o mouse sai
-  link.addEventListener('mouseleave', () => {
-    icon.dispatchEvent(new Event('mouseleave'));
+    if (icon) {
+      link.addEventListener('mouseenter', () => {
+        icon.dispatchEvent(new Event('mouseenter'));
+      });
+      link.addEventListener('mouseleave', () => {
+        icon.dispatchEvent(new Event('mouseleave'));
+      });
+    }
   });

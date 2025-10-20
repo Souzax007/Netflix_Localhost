@@ -10,7 +10,10 @@
     border-radius: 50%;
 }
 .nav-item{
-    background-color: #4cb4b4;
+    background-color: #031874;
     border-radius: 8px;
     padding: 0px !important;
+}
+.nav-item a{
+    color: #ffffff !important;
 }

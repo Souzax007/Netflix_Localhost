@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary pt-0 d-flex justify-content-between">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 m-0 d-flex justify-content-between">
       <div class="container-fluid bg-secondary-custom">
         <a class="navbar-brand d-flex align-items-center" href="#">
           <canvas id="canvas" width="50" height="50"></canvas>
@@ -52,7 +52,7 @@
                   trigger="hover"
                   style="width:25px;height:25px">
                 </lord-icon>
-                Minha Lista</a>
+                Biblioteca</a>
             </li>
           </ul>
 
@@ -71,9 +71,46 @@
             </li>
           </ul>
         </div>
-
       </div>
     </nav>
+
+    <main class="p-0 m-0">
+    <div id="carouselExampleInterval" class="carousel slide w-100 " data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active" data-bs-interval="10000">
+      <div class="ratio ratio-21x9">
+        <img src="img-film/wp11889099-pirates-of-the-caribbean-film-series-wallpapers.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="2000">
+      <div class="ratio ratio-21x9">
+        <img src="img-film/wp8090623-avatar-movie-computer-wallpapers.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="ratio ratio-21x9">
+        <img src="img-film/wp12043558-classic-film-wallpapers.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+    </main>
+
 
     <script type="module" src="js/importar.js"></script>
     <script src="js/moveicon.js"></script>

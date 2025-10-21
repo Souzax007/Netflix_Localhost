@@ -17,3 +17,12 @@
 .nav-item a{
     color: #ffffff !important;
 }
+.carousel-item{
+    height: 400px;
+}
+.carousel-item img {
+  height: 400px;   
+  width: auto;     
+  display: block;  
+  margin: 0 auto;  
+}

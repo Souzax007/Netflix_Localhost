@@ -10,7 +10,7 @@ $result = $conn->query("SELECT * FROM filmes ORDER BY data_publicacao DESC");
 </head>
 <body>
   <h1>Catálogo de Filmes</h1>
-  <div class="catalogo">
+  <div class="catalogo" style="display: flex; flex-wrap: wrap; gap: 20px;">
     <?php while ($row = $result->fetch_assoc()): ?>
       <div class="filme">
         <a href="video.php?id=<?php echo $row['id']; ?>">

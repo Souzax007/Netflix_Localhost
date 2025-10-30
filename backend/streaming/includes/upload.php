@@ -20,14 +20,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $novo_nome = uniqid() . "_" . $arquivo_nome;
     $caminho_arquivo = $diretorio . $novo_nome;
 
-    // Caminho relativo para salvar no banco (para exibir no site)
-    $caminho_relativo = "img_capas/" . $novo_nome;
+    //aqui, apenas o nome do arquivo será salvo no banco
+    $nome_no_banco = $novo_nome;
 
     if (move_uploaded_file($_FILES["thumbnail"]["tmp_name"], $caminho_arquivo)) {
         // Inserir no banco
         $sql = "INSERT INTO filmes (titulo, descricao, categoria, thumbnail) VALUES (?, ?, ?, ?)";
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("ssss", $titulo, $descricao, $categoria, $caminho_relativo);
+        $stmt->bind_param("ssss", $titulo, $descricao, $categoria, $nome_no_banco);
 
         if ($stmt->execute()) {
             echo "Filme salvo com sucesso!";

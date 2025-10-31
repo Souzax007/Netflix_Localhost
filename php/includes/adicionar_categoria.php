@@ -1,6 +1,5 @@
 <?php
     include "conexao.php";
-
     // Pega o valor do formulário
 if(isset($_POST['nome'])) {
     $nome = $conn->real_escape_string($_POST['nome']);

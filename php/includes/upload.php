@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Inserir no banco
         $sql = "INSERT INTO filmes (titulo, descricao, categoria, thumbnail) VALUES (?, ?, ?, ?)";
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("ssss", $titulo, $descricao, $categoria, $nome_no_banco);
+        $stmt->bind_param("ssis", $titulo, $descricao, $categoria, $nome_no_banco);
 
         if ($stmt->execute()) {
             echo "Filme salvo com sucesso!";

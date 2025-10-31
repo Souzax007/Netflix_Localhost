@@ -16,6 +16,9 @@
 .nav-item a{
     color: #ffffff !important;
 }
+a {
+    text-decoration: none !important;
+}
 .carousel-item{
     height: 400px;
 }
@@ -27,4 +30,34 @@
 }
 ul.dropdown-menu.dropdown-menu-end.show {
     background-color: #263181 !important;
+}
+/*main*/
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 20px; 
+  justify-items: center;
+  padding: 20px;
+}
+
+.filme {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.filme:hover {
+  transform: scale(1.05);
+}
+
+.filme img {
+  border-radius: 8px;
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.filme h3 {
+  color: #000000;
+  font-size: 1rem;
+  margin-top: 8px;
 }

@@ -2,7 +2,6 @@
   background-color: #000000 !important;
   color: #fff !important;
 }
-
 .navbar-profile-img {
     width: 35px;
     height: 35px;
@@ -25,4 +24,7 @@
   width: auto;     
   display: block;  
   margin: 0 auto;  
+}
+ul.dropdown-menu.dropdown-menu-end.show {
+    background-color: #263181 !important;
 }

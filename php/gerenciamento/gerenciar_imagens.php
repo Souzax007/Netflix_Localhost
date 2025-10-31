@@ -1,5 +1,5 @@
 <?php
-include "conexao.php";
+include "../includes/conexao.php";
 
 // Caminho da pasta onde ficam as imagens
 $diretorio = "../img_capas/";
@@ -51,7 +51,7 @@ $arquivos_pasta = array_diff(scandir($diretorio), array('.', '..'));
                     <td><img src="../img_capas/<?= $row['thumbnail'] ?>" width="100"></td>
                     <td><span class="badge bg-success">Banco de Dados</span></td>
                     <td>
-                        <a href="excluir_imagem.php?id=<?= $row['id'] ?>" class="btn btn-danger btn-sm"
+                        <a href="../includes/excluir_imagem.php?id=<?= $row['id'] ?>" class="btn btn-danger btn-sm"
                            onclick="return confirm('Tem certeza que deseja excluir esta imagem e o registro do banco?');">
                            Excluir
                         </a>
@@ -72,7 +72,7 @@ $arquivos_pasta = array_diff(scandir($diretorio), array('.', '..'));
                     <td><img src="../img_capas/<?= $arquivo ?>" width="100"></td>
                     <td><span class="badge bg-warning text-dark">Apenas na pasta</span></td>
                     <td>
-                        <a href="excluir_imagem.php?arquivo=<?= urlencode($arquivo) ?>" class="btn btn-danger btn-sm"
+                        <a href="../includes/excluir_imagem.php?arquivo=<?= urlencode($arquivo) ?>" class="btn btn-danger btn-sm"
                            onclick="return confirm('Tem certeza que deseja excluir apenas o arquivo da pasta?');">
                            Excluir
                         </a>

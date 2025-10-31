@@ -1,5 +1,5 @@
 <?php
-include 'includes/conexao.php';
+include 'conexao.php';
 $id = $_GET['id'];
 $result = $conn->query("SELECT * FROM filmes WHERE id = $id");
 $filme = $result->fetch_assoc();
@@ -12,7 +12,7 @@ $filme = $result->fetch_assoc();
 <body>
   <h1><?php echo $filme['titulo']; ?></h1>
   <video controls width="800">
-    <source src="videos/<?php echo $filme['arquivo']; ?>" type="video/mp4">
+    <source src="../videos/<?php echo $filme['arquivo']; ?>" type="video/mp4">
   </video>
   <p><?php echo $filme['descricao']; ?></p>
 </body>

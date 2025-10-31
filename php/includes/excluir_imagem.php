@@ -29,7 +29,7 @@ if (isset($_GET['id'])) {
         $stmt_del->execute();
     }
 
-    echo "<script>alert('Imagem e registro excluídos com sucesso!'); window.location='gerenciar_imagens.php';</script>";
+    echo "<script>alert('Imagem e registro excluídos com sucesso!'); window.location='../gereciamento/gerenciar_imagens.php';</script>";
 }
 
 // Caso seja uma imagem órfã (sem ID, apenas nome de arquivo)
@@ -39,9 +39,9 @@ if (isset($_GET['arquivo'])) {
 
     if (file_exists($caminho)) {
         unlink($caminho);
-        echo "<script>alert('Arquivo órfão excluído com sucesso!'); window.location='gerenciar_imagens.php';</script>";
+        echo "<script>alert('Arquivo órfão excluído com sucesso!'); window.location='../gereciamento/gerenciar_imagens.php';</script>";
     } else {
-        echo "<script>alert('Arquivo não encontrado.'); window.location='gerenciar_imagens.php';</script>";
+        echo "<script>alert('Arquivo não encontrado.'); window.location='../gereciamento/gerenciar_imagens.php';</script>";
     }
 }
 

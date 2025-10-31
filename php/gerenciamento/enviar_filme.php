@@ -6,7 +6,7 @@
 </head>
 <body>
   <h2>Adicionar Filme</h2>
-  <form action="includes/upload.php" method="POST" enctype="multipart/form-data">
+  <form action="../includes/upload.php" method="POST" enctype="multipart/form-data">
     <label for="titulo">Título</label><br>
     <input type="text" id="titulo" name="titulo" required><br><br>
 

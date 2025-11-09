@@ -1,0 +1,18 @@
+# Ignorar tudo dentro da pasta php/video
+php/videos/*
+
+# Não ignorar a própria pasta (para que ela suba vazia ou com arquivos permitidos)
+!php/videos/
+
+# Permitir arquivos .txt dentro dela
+!php/videos/*.txt
+
+
+# Ignorar tudo dentro da pasta php/img_capas
+php/img_capas/*
+
+# Não ignorar a própria pasta (para que ela suba vazia ou com arquivos permitidos)
+!php/img_capas/
+
+# Permitir arquivos .txt dentro dela
+!php/img_capas/*.txt

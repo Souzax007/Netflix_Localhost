@@ -1,0 +1,24 @@
+.bg-secondary-custom {
+  background-color: #000000 !important;
+  color: #fff !important;
+}
+.navbar-profile-img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.nav-item{
+    background-color: #031874 !important;
+    border-radius: 8px;
+    padding: 0px !important;
+}
+.nav-item a{
+    color: #ffffff !important;
+}
+a {
+    text-decoration: none !important;
+}
+ul.dropdown-menu.dropdown-menu-end.show {
+    background-color: #263181 !important;
+}

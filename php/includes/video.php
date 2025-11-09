@@ -51,18 +51,18 @@
 
     <div class="extra-controls">
       <div class="control-group">
-        <label>🔊 Volume</label>
+        <label> Volume</label>
         <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1">
       </div>
 
       <div class="control-group">
-        <label>☀️ Brilho</label>
+        <label> Brilho</label>
         <input type="range" id="brightnessControl" min="0.5" max="1.5" step="0.01" value="1">
       </div>
 
       <div class="control-group">
         <button class="download-btn" onclick="baixarVideo()">
-          ⬇️ Baixar Vídeo
+          ⬇ Baixar Vídeo
         </button>
       </div>
     </div>
